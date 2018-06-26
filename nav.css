@@ -1,0 +1,8 @@
+.navigation{
+}
+
+.navigation_item{
+    text-decoration: none;
+    border: black;
+    display: inline-block;
+}
