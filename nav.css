@@ -1,25 +1,42 @@
-.nav {
+.menu {
     background: white;
     min-width: 100%;
     max-width: 100%;
     margin: auto;
-    border: black;
-    text-align: right;
     position: fixed;
+    border-bottom: solid;
 }
 
-.navigation__item {
-    list-style-type: none;
+.menu__logo {
+    padding: 1.5vw;
+}
+
+.menu__list {
+    text-align: right;
+}
+
+
+.menu__list--item {
+    list-style: none;
     text-decoration: none;
-    display: inline-block;
+    color: black;
     font-weight: bold;
-    padding: 1vw;
+    padding: 0 2vw;
+    display: inline-block;
+    align-items: flex-end;
 }
 
-.navigation{
+.menu__list--item:hover {
+    opacity: 0.8;
+    color: green;
 }
 
-.container {
-    margin: 0 auto;
-    max-width: 1024px;
+.menu__list--item:active {
+    color: bisque
 }
+
+
+.menu__logo .menu__list--item {
+
+}
+
