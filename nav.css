@@ -1,8 +1,25 @@
+.nav {
+    background: white;
+    min-width: 100%;
+    max-width: 100%;
+    margin: auto;
+    border: black;
+    text-align: right;
+    position: fixed;
+}
+
+.navigation__item {
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    padding: 1vw;
+}
+
 .navigation{
 }
 
-.navigation_item{
-    text-decoration: none;
-    border: black;
-    display: inline-block;
+.container {
+    margin: 0 auto;
+    max-width: 1024px;
 }
