@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 100%; padding: 0; margin: 0;}
+
+
+
+.features {
+    font-family: Roboto;
+    column-count: 3;
+    text-align: center;
+
+
+    }
+
+header { align-content: central;}
+
+.contain {
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1024;
+}
