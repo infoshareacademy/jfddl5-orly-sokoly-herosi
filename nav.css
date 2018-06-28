@@ -1,31 +1,104 @@
-.menu {
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/* main styling */
+
+.menu{
+    border-bottom: solid;
+    position: fixed;
+}
+
+.menu__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
     background: white;
     min-width: 100%;
     max-width: 100%;
     margin: auto;
-    position: fixed;
-    border-bottom: solid;
 }
 
 .menu__logo {
-    padding: 1.5vw;
+    min-width: 100px;
+    height: 50px;
+    background-image: url('./img//logo\ osh.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 .menu__list {
-    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 0;
+    padding: 0;
 }
 
 
 .menu__list--item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
     list-style: none;
     text-decoration: none;
     color: black;
     font-weight: bold;
     padding: 0 2vw;
-    display: inline-block;
-    align-items: flex-end;
+    height: 50px;
+    margin-bottom: 10px;
 }
 
+/* mobile version for navi */
+
+@media screen and (max-width: 768px){
+    .menu__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu__logo {
+        flex-grow: 3;
+
+        height: 50px;
+        background-image: url('./img//logo\ osh.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin: 10px; 
+    }
+    
+    .menu__list {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 5;
+    
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu__list--item {
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+    
+        list-style: none;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        padding: 0 2vw;
+        height: 50px;;
+    }
+}
+
+/* extra */
 .menu__list--item:hover {
     opacity: 0.8;
     color: green;
@@ -33,10 +106,5 @@
 
 .menu__list--item:active {
     color: bisque
-}
-
-
-.menu__logo .menu__list--item {
-
 }
 
