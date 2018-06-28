@@ -1,17 +1,27 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700&subset=latin-ext');
 
-body
-{
-margin: 0;
+html, body{
+  margin: 0;
+  padding: 0;
 }
-.main-container
-{
+
+.main-container{
     font-family: 'Roboto', sans-serif;
     font-size: 8em;
-    width: 100%;
-    background-image: url("https://st2.depositphotos.com/1763191/6436/v/950/depositphotos_64362075-stock-illustration-a-fat-hen.jpg");
-    height: 748px;
+    background-image: url("img/BG.svg"); 
+    background-size: 110%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: auto;
+}
+.computer_photo
+{
+width: 85.883%;
+position: absolute, bottom;
+
+   
+   
 }
 .button {
     background: transparent;
@@ -19,11 +29,9 @@ margin: 0;
     padding: 0;
     cursor: pointer;
     outline: 0;
-    
-  }
+}
   
-  .button 
-  {
+.button {
     display: inline-block;
     position: relative;
     padding: 20px 38px;
@@ -37,15 +45,13 @@ margin: 0;
     box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.1 );
   }  
 
-  .button:hover 
-  {
+.button:hover {
     top: -10px;
     box-shadow: 0px 10px 10px rgba( 15, 165, 60, 0.2 );
-  }
+}
 
-  .button:active
-   {
+.button:active{
     top: 0px;
     box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.0 );
     background: rgba( 20, 224, 133, 1 );
-  }
+}
