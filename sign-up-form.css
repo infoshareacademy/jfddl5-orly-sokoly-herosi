@@ -10,6 +10,9 @@
 }
  .logo {
      background-image: url("sign-up-form-img.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center 28%;
      width: 100%;
      grid-area: 1 / 1 / 2 / 3;
      text-align: center;
@@ -17,6 +20,9 @@
  }
  .title {
      background-color: #ffa894;
+     display: flex;
+     justify-content: center;
+     align-items: center;
      text-align: center;
      grid-area: 2 / 1 / 3 / 3;
  }
@@ -50,77 +56,93 @@
     background-color:  #71dbb7;
 
  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*#sing-up-form__user-email {
-    border: 1px solid black;
-    margin: auto;
-    padding: 5px;
-}
-#sing-up-form__description {
-    font-weight:
-    margin: auto;
-    padding: 5px;
+ .side-right__button__top {
+    display: block;
+    position: fixed;
+    bottom: 38px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #71dbb7;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 20px;
     font-size: 20px;
-}
-#sing-up-form__description p {
-    font-weight: 100px;
-}
-#sing-up-form {
-    size: 300px;
+ }
 
-}*/
+ .descriptions-container {
+     display: grid;
+ }
+
+ .description-title {
+     grid-area: 1 / 1 / 2 / 7;
+ }
+
+ .function-1 {
+     grid-area: 2 / 1 / 3 / 2;
+ }
+
+ .function-2 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.function-3 {
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.function-4 {
+    grid-area: 5 / 1 / 6 / 2;
+}
+
+.function-5 {
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+.function-6 {
+    grid-area: 3 / 4 / 4 / 5;
+}
+
+.function-7 {
+    grid-area: 4 / 4 / 5 / 5;
+}
+
+.function-8 {
+    grid-area: 5 / 4 / 6 / 5;
+}
+
+.descriptions-function-1 {
+    grid-area: 2 / 2 / 3 / 4;
+}
+.descriptions-function-2 {
+    grid-area: 3 / 2 / 4 / 4;
+
+}
+.descriptions-function-3 {
+    grid-area: 4 / 2 / 5 / 4;
+
+}
+.descriptions-function-4 {
+    grid-area: 5 / 2 / 6 / 4;
+
+}
+.descriptions-function-5 {
+    grid-area: 2 / 5 / 3 / 7;
+
+}
+.descriptions-function-6 {
+    grid-area: 3 / 5 / 4 / 7;
+
+}
+.descriptions-function-7 {
+    grid-area: 4 / 5 / 5 / 7;
+
+}
+.descriptions-function-8 {
+    grid-area: 5 / 5 / 6 / 7;
+
+}
+
 
 
