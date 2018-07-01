@@ -1,87 +1,153 @@
-
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700&subset=latin-ext');
-
-html, body{
-  margin: 0;
-  padding: 0;
-  font-family: Roboto;
-}
-  
-.main-container{
-    background: url("img/background.svg"); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* min-height: 100vh;     */
-    min-width: 100vh; 
-    overflow: hidden; 
-}
-.announcement {
-    font-weight: bold; 
-    line-height: 1.33; 
-    color: #2c4040;
-    padding-left: 9%;
-    padding-top: 2%;
+ html{ 
     margin: 0;
+    padding: 0;
 }
-@media all and (min-width: 960px) {
-    .announcement{
-        font-size: 50px;
-    }
-    }
-    @media all and (max-width: 959px) and (min-width: 600px) {
-    .announcement{
-        font-size: 5vw;
-      }
-    }
-    @media all and (max-width: 599px) and (min-width: 50px) {
-    .announcement{
-        font-size: 6vw;
-      }
-    }
-.offer {
-    font-size: 3vw;
-    font-weight: 500;  
-    line-height: 1.31;
-    color: #ffffff;
-    padding-left: 9%; 
-  }
-  @media all and (min-width: 960px) {
-    .offer{
-        font-size: 40px;
-        }
-    }
-    @media all and (max-width: 959px) and (min-width: 600px) {
-    .offer{
-        font-size: 5vw;
-      }
-    }
-    @media all and (max-width: 599px) and (min-width: 50px) {
-    .offer{
-        font-size: 6vw;
-      }
-    }
-.button {
-    margin-left: 9%;
-    background-color: #ffffff;
-    font-weight: bold;
-    line-height: 1.1;
+.header{
     text-align: center;
-    vertical-align: middle;
-    color: #fe979c;
-    font-size: 3vw;
-    width: 25vw;
-    height: 10vw;
-    border-radius: 35%;
+    color: #fe999b;
+    /* text-decoration: underline #71dbb7; */
+    /* display: inline-block; */
+    position: relative;    
 }
-.computer_photo{
+.header::after{
+    content:'';
+    height: 2px;
+    width: 2%;
+    background: #71dbb7;
     position: absolute;
-    left: 45%;
-    top: 10%;
-    margin: 0;
-    width: 50%;
+    left:calc(49%);
+    bottom: 0;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
     height: auto;
     overflow: hidden;
+    /* background-color: gray;   */
 }
+@media only screen and (max-width: 900px) {
+    .container {
+        flex-wrap: wrap;  
+    }
+}
+.box1{ 
+    display:flex;
+    border: 8px solid #ffffff;
+    background-image: url("img/magda.jpg") ; 
+    height: 490px;
+    width: 20%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-decoration: none;
+}
+a:visited, a:link, a:hover{
+    text-decoration: none;
+    color:#ffffff;   
+}
+@media only screen and (max-width: 720px) {
+    .box1 {
+        width: 44%;
+    }  
+}
+@media only screen and (max-width: 470px) {
+    .box1 {    
+        width: 96%;
+    }   
+}
+.rectangle{
 
-
+    height: 50px;
+    width: 100%;
+    align-self: flex-end;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #71dbb7;
+    vertical-align: middle;
+    line-height: 3;
+}
+.box1 .rectangle:hover{
+    background-color: #fe999b;
+    transition: all 1s ease; 
+    cursor: pointer;
+}
+.box2 {
+    display:flex;
+    border: 8px solid #ffffff;
+    background-image: url("img/mateusz.jpg") ; 
+    height: 490px;
+    width: 20%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+.box2 .rectangle:hover{
+    background-color: #fe999b;
+    transition: all 1s ease; 
+    cursor: pointer;
+}
+@media only screen and (max-width: 720px) {
+    .box2 {
+        width: 44%;
+    }  
+}
+@media only screen and (max-width: 470px) {
+    .box2 {
+        width: 96%;
+    }
+}
+.box3{
+    display:flex;
+    border: 8px solid #ffffff;
+    background-image: url("img/kacper.jpg") ; 
+    height: 490px;
+    width: 20%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.box3 .rectangle:hover{
+    background-color: #fe999b;
+    transition: all 1s ease; 
+    cursor: pointer;
+}
+@media only screen and (max-width: 720px) {
+    .box3 {
+        width: 44%;
+    }   
+}
+@media only screen and (max-width: 470px) {
+    .box3 {
+        width: 96%;
+    }
+}
+.box4{
+    display:flex;
+    border: 8px solid #ffffff;
+    background-image: url("img/arek.jpg") ; 
+    height: 490px;
+    width: 20%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.box4 .rectangle:hover{
+    background-color: #fe999b;
+    transition: all 1s ease; 
+    cursor: pointer;
+}
+@media only screen and (max-width: 720px) {
+    .box4 {
+        width: 44%;
+    }
+}
+@media only screen and (max-width: 470px) {
+    .box4 {
+        width: 96%;
+    }
+}
