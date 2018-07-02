@@ -47,10 +47,12 @@
     background-size: cover;
     text-decoration: none;
 }
-a:visited, a:link, a:hover{
+
+a.team1:visited, a.team1:link, a.team1:hover{
     text-decoration: none;
     color:#ffffff;   
 }
+
 @media only screen and (max-width: 720px) {
     .box1 {
         width: 44%;
