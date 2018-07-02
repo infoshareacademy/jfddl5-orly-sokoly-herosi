@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700&subset=latin-ext');
+
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+} 
+/* sekcja hero */
+.main-container{
+    background: url("img/psd1.png"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;     
+    min-width: 100vw; 
+    overflow: hidden; 
+}
+@media screen and (max-width: 960px) {
+    .main-container{
+      min-height: 70vh;
+        }
+    }
+ @media screen and (max-width: 700px) {
+    .main-container{
+    min-height: 50vh;
+        }
+    }
+@media screen and (max-width: 490px) {
+    .main-container{
+    min-height: 30vh;
+         }
+    }
+.announcement {
+    font-weight: bold;  
+    color: #2c4040;
+    padding-left: 9%;
+    padding-top: 4%;
+    margin: 0;
+}
+@media all and (min-width: 960px) {
+    .announcement{
+        font-size: 65px;
+        }
+    }
+@media all and (max-width: 959px) and (min-width: 600px) {
+    .announcement{
+         font-size: 5vw;
+      }
+    }
+@media all and (max-width: 599px) and (min-width: 50px) {
+    .announcement{
+        font-size: 6vw;
+      }
+    }
+.offer {
+    font-size: 3vw;
+    font-weight: 500;  
+    color: #ffffff;
+    padding-left: 9%; 
+  }
+@media all and (min-width: 960px) {
+    .offer{
+        font-size: 40px;
+        }
+    }
+@media all and (max-width: 959px) and (min-width: 600px) {
+    .offer{
+        font-size: 5vw;
+      }
+    }
+@media all and (max-width: 599px) and (min-width: 50px) {
+    .offer{
+        font-size: 6vw;
+      }
+    }
+.button {
+    margin-left: 9%;
+    background-color: #ffffff;
+    font-weight: bold;
+    line-height: 1.1;
+    text-align: center;
+    vertical-align: middle;
+    color: #fe979c;
+    font-size: 20px;
+    width: 271px;
+    height: 55px;
+    border: none;
+    border-radius: 28px;
+}
+.computer_photo{
+    position: absolute;
+    left: 30%;
+    top: 15%;
+    width: 65%;
+    height: auto;
+    overflow: hidden;
+}
+
