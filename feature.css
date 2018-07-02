@@ -8,6 +8,8 @@
 body, html { 
 	font-size: 100%; 
 	padding: 0; 
+	margin-left: 135px; 
+	margin-right: 135px;
 }
 
 .container {
