@@ -70,14 +70,14 @@ header::after{
 	}
 
 
-h1 {
+.item_title {
 	color: #93a6b9;
 	font-size: 2em;
   	font-weight: bold;
 	text-align: center;
 }
 
-p { 
+.item_describe { 
 	font-size: 1em;
   	font-weight: bold;
   	line-height: 1.88;
@@ -88,7 +88,7 @@ p {
 }
 
 
-img { width: 130px;
+.icon { width: 130px;
 	height: auto;
 	margin-bottom: 40px;
 	align-content: center;
