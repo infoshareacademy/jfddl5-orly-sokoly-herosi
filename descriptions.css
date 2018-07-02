@@ -3,6 +3,7 @@
     background-image: url("background2.svg");
     background-repeat: no-repeat;
     background-size: 110%;
+    background-position: center;
 }
 
 .descriptions__title {

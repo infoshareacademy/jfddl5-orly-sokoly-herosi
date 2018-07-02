@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+
+*, *:after, *:before { 
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box; }
+
+body, html { 
+	font-size: 100%; 
+	padding: 0; 
+}
+
+.container {
+    margin: 0;
+   }
+
+#features {
+	
+ font-family: Roboto;
+display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start; }
+
+.bg { 
+    margin: 0;
+    left: 0;
+	width: 100%;
+	height: 48px;
+    background-color: #ffa894;
+	position: absolute;
+	margin-top: 40px;
+	z-index: -1;
+}
+
+header{
+   text-align: center;
+   color: #fe999b;
+	font-size: 40px;
+	font-weight: bold;
+   position: relative;
+	padding: 10px;
+	margin-bottom: 120px;
+	
+}
+header::after{
+   content:'';
+   height: 0;
+   width: 29px;
+	border: solid 3px #71dbb7;
+   position: absolute;
+   left:calc(49%);
+   bottom: 0;
+}
+
+.features__container {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: space-around;	width: 100%;
+}
+
+.features__item{
+    display: flex;	
+    flex-direction: column;
+    align-items: center;
+	width: 100%;
+	}
+
+
+.item_title {
+	color: #93a6b9;
+	font-size: 2em;
+  	font-weight: bold;
+	text-align: center;
+}
+
+.item_describe { 
+	font-size: 1em;
+  	font-weight: bold;
+  	line-height: 1.88;
+  	text-align: center;
+  	color: #768595;
+	padding: 0px 30px 30px 30px;
+	width: 100%;
+}
+
+
+.icon { width: 130px;
+	height: auto;
+	margin-bottom: 40px;
+	align-content: center;
+	padding: 40px;
+}
+	
+.circle {
+  width: 130px;
+  height: 130px;
+  background-color: #ffa894;
+	border-radius: 50%;
+	}
+
+
+	
+@media screen and (max-width: 768px){
+	*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 100%; padding: 0; margin-left: 10px; margin-right: 10px;}
+	.features__container {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	text-align: content;
+		width: 100%;}
+	.bg { display: none;}
+	
+}
