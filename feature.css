@@ -24,7 +24,8 @@ display: flex;
 	justify-content: flex-start; }
 
 .bg { 
-	margin: 0;
+    margin: 0;
+    left: 0;
 	width: 100%;
 	height: 48px;
     background-color: #ffa894;
