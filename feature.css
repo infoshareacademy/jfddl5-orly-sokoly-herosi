@@ -9,7 +9,8 @@ body, html {
 	font-size: 100%; 
 	padding: 0; 
 	margin-left: 135px; 
-	margin-right: 135px;}
+	margin-right: 135px;
+}
 
 .container {
     margin: 0;
@@ -105,7 +106,7 @@ header::after{
 
 
 	
-@media screen and (max-width: 480px){
+@media screen and (max-width: 768px){
 	*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 body, html { font-size: 100%; padding: 0; margin-left: 10px; margin-right: 10px;}
 	.features__container {
