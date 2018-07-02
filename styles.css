@@ -2,20 +2,24 @@
     margin: 0;
     padding: 0;
 }
-.header{
+.header_team{
     text-align: center;
     color: #fe999b;
     /* text-decoration: underline #71dbb7; */
     /* display: inline-block; */
-    position: relative;    
+    position: relative;
+    margin-bottom: 50px;
+    padding: 10px;
+
 }
-.header::after{
+.header_team::after{
     content:'';
     height: 2px;
-    width: 2%;
+    width: 1.5%;
     background: #71dbb7;
+    border: solid 1px #71dbb7;
     position: absolute;
-    left:calc(49%);
+    left:calc(49.3%);
     bottom: 0;
 }
 .container{
