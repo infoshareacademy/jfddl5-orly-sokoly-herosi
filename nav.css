@@ -16,7 +16,9 @@ body {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.16);
     position: fixed; 
     width: 100%;
-    color: #768595
+    color: #768595;
+    background: white;
+    z-index: 100;
 }
 
 .menu__container {
