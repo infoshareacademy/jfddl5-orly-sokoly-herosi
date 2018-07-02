@@ -1,0 +1,20 @@
+
+
+.sign-up-form__logo {
+     width: 100%;
+     background-image: url("sign-up-form-img.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center 31%;
+     grid-area: 1 / 1 / 2 / 3;
+     text-align: center;
+}
+
+.sign-up-form {
+    display: grid;
+    grid-column: 1fr, 1fr;
+}
+.sign-up-form__side_left {
+
+}
+.sign-up-form__side_left
