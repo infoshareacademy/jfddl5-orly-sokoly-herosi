@@ -1,0 +1,16 @@
+.descriptions {
+    width: 100%;
+    background-image: url("background2.svg");
+    background-repeat: no-repeat;
+    background-size: 110%;
+}
+
+.descriptions__row-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+}
+
+.description__column-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr
+}
