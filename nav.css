@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,700,700i');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/* main styling */
+
+.menu{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.16);
+    position: fixed; 
+    width: 100%;
+    color: #768595;
+    background: white;
+    z-index: 100;
+}
+
+.menu__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    background: white;
+    min-width: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+
+.menu__logo {
+    min-width: 100px;
+    height: 50px;
+    background-image: url('./img//logoosh.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+.menu__list--item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 0 2vw;
+    height: 50px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* mobile version for navi */
+
+@media screen and (max-width: 768px){
+    .menu__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu__logo {
+        flex-grow: 3;
+
+        height: 50px;
+        background-image: url('./img//logoosh.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin: 10px; 
+    }
+    
+    .menu__list {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 5;
+    
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu__list--item {
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+    
+        list-style: none;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        padding: 0 2vw;
+        height: 50px;
+    }
+}
+
+/* extra */
+.menu__list--item:hover {
+    opacity: 0.8;
+    color:#93a6b9;
+}
+
+.menu__list--item:active {
+    color: #ffa894;
+}
+
+/* slow hover effect */
+
+
+.trans {
+    width: 0%;
+    background: linear-gradient(to right, #71dbb7, white);
+    -webkit-transition: width 0.5s;
+    -o-transition: width 0.5s;
+    -moz-transition: width 0.5s;
+    transition: width 0.5s;
+}
+
+
+.trans:hover {
+    width: 100%
+}
