@@ -6,31 +6,6 @@
     background-position: center;
 }
 
-.descriptions__title {
-    color: #fe999b;
-    text-align: center;
-    letter-spacing: 2px;
-    padding: 15px;
-    text-align: center;
-    color: #fe999b;
-    font-size: 40px;
-    font-weight: bold;
-    position: relative;
-    padding: 10px;
-    margin-bottom: 120px;
-    
-}
-.descriptions__title::after{
-  content:'';
-  height: 0;
-  width: 29px;
-    border: solid 3px #71dbb7;
-  position: absolute;
-  left:calc(49%);
-  bottom: 0;
-}
-
-
 .descriptions__icon{
     max-height: 100px;
 }

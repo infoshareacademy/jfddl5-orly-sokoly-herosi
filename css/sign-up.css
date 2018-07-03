@@ -12,29 +12,6 @@
     background-size: cover;
     background-attachment: fixed;
 }
-.sign-up__title {
-    text-align: center;
-    padding: 100px;
-    text-align: center;
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    position: relative;
-    padding: 10px;
-    margin-bottom: 120px;
-    font-weight: bold;
-}
-    
-.sign-up__logo::after{
-     content:'';
-     height: 0;
-     width: 29px;
-     border: solid 3px white;
-     position: absolute;
-     left:calc(49%);
-     bottom: 0;
-     
-}
 
 .sign-up__form {
     display: grid;
