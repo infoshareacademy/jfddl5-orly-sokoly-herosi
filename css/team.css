@@ -30,6 +30,7 @@
     width: 100%;
     height: auto;
     overflow: hidden;
+    margin-bottom: 5%;
 }
 @media only screen and (max-width: 900px) {
     .team_container {
@@ -39,7 +40,7 @@
 .box1{ 
     display:flex;
     border: 8px solid #ffffff;
-    background-image: url("img/magda.jpg") ; 
+    background-image: url("../img/magda.jpg") ; 
     height: 490px;
     width: 20%;
     background-repeat: no-repeat;
@@ -53,7 +54,7 @@ a.team1:visited, a.team1:link, a.team1:hover{
     color:#ffffff;   
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 768px) {
     .box1 {
         width: 44%;
     }  
@@ -84,7 +85,7 @@ a.team1:visited, a.team1:link, a.team1:hover{
 .box2 {
     display:flex;
     border: 8px solid #ffffff;
-    background-image: url("img/mateusz.jpg") ; 
+    background-image: url("../img/mateusz.jpg") ; 
     height: 490px;
     width: 20%;
     background-repeat: no-repeat;
@@ -96,7 +97,7 @@ a.team1:visited, a.team1:link, a.team1:hover{
     transition: all 1s ease; 
     cursor: pointer;
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 768px) {
     .box2 {
         width: 44%;
     }  
@@ -109,7 +110,7 @@ a.team1:visited, a.team1:link, a.team1:hover{
 .box3{
     display:flex;
     border: 8px solid #ffffff;
-    background-image: url("img/kacper.jpg") ; 
+    background-image: url("../img/kacper.jpg") ; 
     height: 490px;
     width: 20%;
     background-repeat: no-repeat;
@@ -121,7 +122,7 @@ a.team1:visited, a.team1:link, a.team1:hover{
     transition: all 1s ease; 
     cursor: pointer;
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 768px) {
     .box3 {
         width: 44%;
     }   
@@ -134,7 +135,7 @@ a.team1:visited, a.team1:link, a.team1:hover{
 .box4{
     display:flex;
     border: 8px solid #ffffff;
-    background-image: url("img/arek.jpg") ; 
+    background-image: url("../img/arek.jpg") ; 
     height: 490px;
     width: 20%;
     background-repeat: no-repeat;
@@ -146,7 +147,7 @@ a.team1:visited, a.team1:link, a.team1:hover{
     transition: all 1s ease; 
     cursor: pointer;
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 768px) {
     .box4 {
         width: 44%;
     }

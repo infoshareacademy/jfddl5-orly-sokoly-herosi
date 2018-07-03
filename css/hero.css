@@ -8,7 +8,7 @@ html, body{
 } 
 /* sekcja hero */
 .main-container{
-    background: url("img/psd1.png"); 
+    background: url("../img/psd1.png"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
