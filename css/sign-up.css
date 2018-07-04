@@ -35,12 +35,16 @@
     background-color: #ffffff;
     border: none;
     background-color: #71dbb7;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
 }
 .user-email {
-    text-align: center;
+  text-align: center;
   width: 506px;
   height: 26px;
-  font-size: 16px;
+  font-size: 100px;
   font-weight: normal;
   text-align: center;
   color: #93a6b9;
@@ -49,7 +53,7 @@
 .sign-up-form__column {
     padding: 50px;
     text-align: center;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bold;
 }
 
@@ -57,5 +61,12 @@
     .sign-up__form {
         display: grid;
         grid-template-columns: 1fr;
+    }
+    .sign-up {
+        color: white;
+        letter-spacing: 2px;
+        background-color: #fe999b;
+        width: 100%;
+        height: auto;
     }
 }

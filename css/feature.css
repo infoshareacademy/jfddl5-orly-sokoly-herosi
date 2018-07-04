@@ -47,9 +47,11 @@
 	font-size: 2em;
   	font-weight: bold;
 	text-align: center;
+	margin-top: 2em;
 }
 
 .item_describe { 
+	
 	font-size: 1em;
   	font-weight: bold;
   	line-height: 1.88;
@@ -57,6 +59,7 @@
   	color: #768595;
 	padding: 0px 30px 30px 30px;
 	width: 100%;
+	
 }
 
 
@@ -89,5 +92,6 @@
 	width: 100%;}
 
 	.bg { display: none;}
+
 	
 }
