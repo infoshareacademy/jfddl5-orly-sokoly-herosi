@@ -1,6 +1,6 @@
 .descriptions {
     width: 100%;
-    background-image: url("background2.svg");
+    background-image: url("../img/background2.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -10,9 +10,7 @@
     color: #fe999b;
     text-align: center;
     letter-spacing: 2px;
-    padding: 15px;
     text-align: center;
-    color: #fe999b;
     font-size: 40px;
     font-weight: bold;
     position: relative;
@@ -29,6 +27,7 @@
   left:calc(49%);
   bottom: 0;
 }
+
 
 
 .descriptions__icon{

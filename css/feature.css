@@ -1,14 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
 
-*, *:after, *:before { 
-	-webkit-box-sizing: border-box; 
-	-moz-box-sizing: border-box; 
-	box-sizing: border-box; }
-
-body, html { 
-	font-size: 100%; 
-	padding: 0; 
-}
 
 .container {
     margin: 0;
@@ -16,8 +6,8 @@ body, html {
 
 #features {
 	
- font-family: Roboto;
-display: flex;
+ 	font-family: Roboto;
+	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: flex-start; }
@@ -33,33 +23,15 @@ display: flex;
 	z-index: -1;
 }
 
-header{
-   text-align: center;
-   color: #fe999b;
-	font-size: 40px;
-	font-weight: bold;
-   position: relative;
-	padding: 10px;
-	margin-bottom: 120px;
-	
-}
-header::after{
-   content:'';
-   height: 0;
-   width: 29px;
-	border: solid 3px #71dbb7;
-   position: absolute;
-   left:calc(49%);
-   bottom: 0;
-}
-
 .features__container {
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: flex-start;
 	align-items: flex-start;
-	align-content: space-around;	width: 100%;
+	align-content: space-around;	
+	width: 100%;
+	margin-bottom: -5%;
 }
 
 .features__item{
@@ -106,7 +78,7 @@ header::after{
 	
 @media screen and (max-width: 768px){
 	*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-body, html { font-size: 100%; padding: 0; margin-left: 10px; margin-right: 10px;}
+
 	.features__container {
     display: flex;
 	flex-direction: column;
@@ -114,7 +86,8 @@ body, html { font-size: 100%; padding: 0; margin-left: 10px; margin-right: 10px;
 	justify-content: space-around;
 	align-items: flex-start;
 	text-align: content;
-		width: 100%;}
+	width: 100%;}
+
 	.bg { display: none;}
 	
 }
