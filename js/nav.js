@@ -1,8 +1,15 @@
-$(document).ready(function(){
-
-    $(".menu__list--icon").on("click", function() {
-
-        $("nav div ul").toggleClass("open");
-
-    }); 
-});
+document.querySelector('.menu__icon--item').addEventListener(
+        'click',
+        () => {
+                let ifMenuOpen = document.querySelector('nav div ul').classList.contains('open')
+                
+                if(ifMenuOpen)
+                {
+                    document.querySelector('nav div ul').classList.remove('open')
+                }
+                    else {
+                         
+                    document.querySelector('nav div ul').classList.add('open') 
+                        }
+        }
+    );
