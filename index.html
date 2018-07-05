@@ -18,12 +18,16 @@
 <body>
 
     <!-- NAVBAR -->
-    <nav class="menu">
+    <nav class="menu" id="nav">
         <div class="container">
             <div class="menu__container">
                 <a class="menu__logo" href="index.html">
                 </a>
-
+                <a class="menu__list--icon menu__list--item-hidden">
+                        <div class="menu__icon--item"></div>
+                        <div class="menu__icon--item"></div>
+                        <div class="menu__icon--item"></div>
+                </a>
                 <ul class="menu__list">
                     <a class="menu__list--item" href="#features">
                         <li>
@@ -54,7 +58,7 @@
     </nav>
 
     <!-- HERO -->
-    <section id="hero">
+    <section id="hero" class="scroll">
 
         <div class="main-container">
             <h1 class="announcement">Exclusive offer only for you</h1>
@@ -68,7 +72,7 @@
     </section>
 
     <!-- FEATURES -->
-    <section id="features">
+    <section id="features" class="scroll">
 
         <header class="header">Features</header>
 
@@ -113,7 +117,7 @@
     </section>
 
     <!-- DESCRIPTIONS -->
-    <section id="descriptions" class="descriptions">
+    <section id="descriptions" class="descriptions scroll">
         <div class="header">Our product</div>
 
         <div class="descriptions__row-container">
@@ -199,7 +203,7 @@
     </section>
 
     <!-- TEAM -->
-    <section id="team">
+    <section id="team" class="scroll">
         <h1 class='header'>TEAM</h1>
         <div class='team_container'>
             <div class='box1'>
@@ -227,7 +231,7 @@
     </section>
 
     <!-- SIGN UP FORM -->
-    <section id="sign-up-form">
+    <section id="sign-up-form" class="scroll">
         <div class="sign-up">
             <div class="sign-up__logo"></div>
             <div class="header header--white">Sign-Up</div>
@@ -249,6 +253,9 @@
     <footer>
 
     </footer>
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/nav.js"></script>
 </body>
 
 </html>
