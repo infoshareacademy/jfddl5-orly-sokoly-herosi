@@ -1,9 +1,12 @@
 .descriptions {
-    width: 100%;
     background-image: url("../img/background2.svg");
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;     
+    min-width: 100vw; 
+    overflow: hidden; 
+    margin-bottom: 2%;
 }
 
 .descriptions__title {
