@@ -34,78 +34,33 @@ window.addEventListener(
     () => {
 
         let heightOfScroll = window.scrollY
-
-        console.log(heightOfScroll)
-
         let sections = document.getElementsByClassName("scroll");
+        const scrollarr = []
 
-        console.log(sections)
+        for (let i = 0; i < sections.length; i++) {
+            const section = sections[i]
 
-        const a = sections[0].offsetTop - heightOfScroll + sections[0].offsetHeight
+            scrollarr[i] = {
+                section: section,
+                id: section.getAttribute('id'),
+                heightToTop: (section.offsetTop - heightOfScroll + section.offsetHeight / 2)
+            }
+        }
 
-        console.log(a)
+        let activeSection = null
 
-        const b = sections[1].offsetTop - heightOfScroll + sections[1].offsetHeight
+        for (let i = 0; i < scrollarr.length; i++) {
+            if (scrollarr[i].heightToTop > 0) {
+                activeSection = scrollarr[i]
+                break;
+            }
+        }
 
-        const c = sections[2].offsetTop - heightOfScroll + sections[2].offsetHeight
+        makeActiveNavElement(activeSection.id)
+    }
+);
 
-        const d = sections[3].offsetTop - heightOfScroll + sections[3].offsetHeight
-
-        const arr = [a, b, c, d];
-
-        console.log(arr)
-
-        // Math.min(a, b, c, d)
-
-        // console.log(Math.min())
-
-    });
-
-
-
-
-// for (i=0; i<arr.length; i++) {
-//     if (arr[i] < 0) {
-//         continue 
-//     }
-//         else { 
-//             arr[i] < arr[i+1]
-//         }
-//     }
-
-// }
-
-// Math.min(a,b,c,d)
-
-// const getTheMinValue = () => {
-//     if (a>b) {
-
-
-//     }
-// }
-
-// for(i=0; i<4; i++) {
-//     navbar(i).offsetTop
-// }
-
-
-// if (window.scrollyY )
-// let scrolllenght = navbar.offsetTop
-
-//         console.log('dfsfs')
-//     }
-//  )
-
-// //świecenie
-
-// function lightnavbar = navbar[x];
-// .classList.add('light') 
-
-
-
-// if (navbar[0]<navbar[1]) {
-
-// }
-
-
-//  //".scroll".scrollY
+const makeActiveNavElement = id => {
+    console.log(id)
+    // code her ;)
+}
