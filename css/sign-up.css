@@ -35,6 +35,7 @@
     background-color: #ffffff;
     border: none;
     background-color: #71dbb7;
+    margin-bottom: 15px;
 }
 .user-email {
     text-align: center;
@@ -58,4 +59,10 @@
         display: grid;
         grid-template-columns: 1fr;
     }
+}
+
+
+.sign-up-form__checkbox {
+    text-align: center;
+    font-size: 0.5em;    
 }
