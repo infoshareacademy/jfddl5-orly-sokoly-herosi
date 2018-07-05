@@ -1,18 +1,17 @@
-document.querySelector('.menu__icon--item').addEventListener(
-        'click',
-        () => {
-                let ifMenuOpen = document.querySelector('nav div ul').classList.contains('open')
+document.querySelector('.menu__list--icon').addEventListener(
+    'click',
+    () => {
+        let ifMenuOpen = document.querySelector('nav div ul').classList.contains('open')
 
-                if(ifMenuOpen)
-                {
-                    document.querySelector('nav div ul').classList.remove('open')
-                }
-                    else {
-                         
-                    document.querySelector('nav div ul').classList.add('open') 
-                        }
+        if (ifMenuOpen) {
+            document.querySelector('nav div ul').classList.remove('open')
         }
-    );
+        else {
+
+            document.querySelector('nav div ul').classList.add('open')
+        }
+    }
+);
 
 
 
@@ -34,33 +33,33 @@ window.addEventListener(
     'scroll',
     () => {
 
-let heightOfScroll = window.scrollY
+        let heightOfScroll = window.scrollY
 
-console.log(heightOfScroll)
+        console.log(heightOfScroll)
 
-let navbar = document.getElementsByClassName("scroll"); 
+        let sections = document.getElementsByClassName("scroll");
 
-console.log(navbar)
+        console.log(sections)
 
-const a = navbar[0].offsetTop - heightOfScroll;
+        const a = sections[0].offsetTop - heightOfScroll + sections[0].offsetHeight
 
-console.log(a)
+        console.log(a)
 
-const b = navbar[1].offsetTop - heightOfScroll;
+        const b = sections[1].offsetTop - heightOfScroll + sections[1].offsetHeight
 
-const c = navbar[2].offsetTop - heightOfScroll;
+        const c = sections[2].offsetTop - heightOfScroll + sections[2].offsetHeight
 
-const d = navbar[3].offsetTop - heightOfScroll;
+        const d = sections[3].offsetTop - heightOfScroll + sections[3].offsetHeight
 
-const arr = [a, b, c, d];
+        const arr = [a, b, c, d];
 
-console.log(arr)
+        console.log(arr)
 
-Math.min(a,b,c,d)
+        // Math.min(a, b, c, d)
 
-console.log(Math.min())
+        // console.log(Math.min())
 
-});
+    });
 
 
 
