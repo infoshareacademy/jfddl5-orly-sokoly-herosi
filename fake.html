@@ -4,20 +4,51 @@
   <meta charset="UTF-8">
   <title>Lets make some conflicts :)</title>
   <style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: auto;
+    }
+
     .menu {
         background: lightblue;
         display: flex;
-        flex-flow: row nowrap;
+
     }
+
+    .menu__item {
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+
+    li {
+        margin: 0px 5px 0px 5px; 
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    a:hover {
+        color: red;
+    }
+
+
   </style>
 </head>
 <body>
 <nav class="menu">
-    <li><a href="#">Some link</a></li>
-    <li><a href="#">Some link</a></li>
-    <li><a href="#">Some link</a></li>
-    <li><a href="#">Some link</a></li>
-    <li><a href="#">Some link</a></li>
+<ul class="menu__item">
+    <li class="menu__item-a"><a href="#">Some link</a></li>
+    <li class="menu__item-a"><a href="#">Some link</a></li>
+    <li class="menu__item-a"><a href="#">Some link</a></li>
+    <li class="menu__item-a"><a href="#">Some link</a></li>
+    <li class="menu__item-a"><a href="#">Some link</a></li>
+</ul>
 </nav>
 <main>
     <h1>Merge resolving task</h1>
