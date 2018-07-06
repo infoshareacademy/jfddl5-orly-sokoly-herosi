@@ -66,6 +66,16 @@
         font-size: 5vw;
       }
     }
+    .computer_photo{
+        margin-top: 5%;
+        position: absolute;
+        left: 30%;
+        top: 15%;
+        width: 70%;
+        height: auto;
+        overflow: hidden;
+    }
+    
 @media all and (max-width: 599px) and (min-width: 50px) {
     .offer{
         font-size: 6vw;
@@ -83,21 +93,26 @@
     	margin-top: 50%;
 	}
 	.button {
-		margin-top: 20%;
+		margin-top: 10%;
 	}
 	.computer_photo{
-		margin-top: 50vw;
-    	width: 70%;
-    	height: auto; 
-		overflow: hidden;
+        width: 100%;
+        position: relative;
+        left: 0;
+        margin-bottom: 250px;
+       
+		
 }
 }
 
 .button {
+    display: inline-block;
+    text-decoration: none;
     margin-left: 9%;
     background-color: #ffffff;
     font-weight: bold;
     text-align: center;
+    text-justify: middle;
     vertical-align: middle;
     color: #fe979c;
     font-size: 20px;
@@ -105,14 +120,5 @@
     height: 55px;
     border: none;
     border-radius: 28px;
-}
-.computer_photo{
-	margin-top: 5%;
-    position: absolute;
-    left: 30%;
-    top: 15%;
-    width: 70%;
-    height: auto;
-    overflow: hidden;
 }
 
