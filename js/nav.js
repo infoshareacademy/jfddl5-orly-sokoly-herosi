@@ -64,7 +64,6 @@ const makeActiveNavElement = actualId => {
         {
 
             allNavElements[i].classList.add('active-nav')
-            console.log("should be green")
         } 
             else {
 
