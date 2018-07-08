@@ -37,7 +37,6 @@
 .box{
     display:flex;
     border: 8px solid #ffffff;
-    background-image: url("../img/magda.PNG") ; 
     height: 490px;
     width: 20%;
     background-repeat: no-repeat;
