@@ -14,21 +14,6 @@ document.querySelector('.menu__list--icon').addEventListener(
 );
 
 
-
-
-// na przesuniecie skrola znajdować na której wysokości jest scroll
-
-//znaleźć wysokości wszystkich id 
-
-//odjąć od każdje wysokości id 
-// swoją wysokość 
-
-
-//wyrzucić najmniejszą różnice (nieujemną)
-
-//klasa .scroll dla id z nagłowkami
-
-
 window.addEventListener(
     'scroll',
     () => {
@@ -60,8 +45,29 @@ window.addEventListener(
     }
 );
 
-const makeActiveNavElement = id => {
-    console.log(id)
-    // code her ;)
-}
+var allNavElements = document.querySelectorAll('.menu__list--item')
 
+//    console.log(allNavElements)     
+
+const makeActiveNavElement = actualId => {
+    // console.log(actualId) 
+
+    for(i = 0; i < allNavElements.length; i++) {
+
+            // console.log(allNavElements.length)
+
+        var a = allNavElements[i].getAttribute("href")
+
+        // console.log(a)
+    
+        if(a.includes(actualId)) 
+        {
+
+            allNavElements[i].classList.add('active-nav')
+        } 
+            else {
+
+            allNavElements[i].classList.remove('active-nav')
+        }
+    }
+}
