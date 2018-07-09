@@ -1,0 +1,27 @@
+.premiere {
+display: flex;
+justify-content: center;
+margin: 5%;
+padding: 0;
+}
+
+.premiere__date{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+    text-align: center;
+    color: #fe999b;
+    font-size: 40px;
+    font-weight: bold;
+    flex-grow: 1;
+
+ }
+
+ .premiere__date:last-child {
+     margin-top: 0;
+     margin-bottom: 0;
+ }
+
+ 

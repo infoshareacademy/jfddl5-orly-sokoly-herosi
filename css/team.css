@@ -8,41 +8,71 @@
     overflow: hidden;
     margin-bottom: 5%;
     margin-top: 0%;
+    opacity: 0;
+    transition: all 1100ms ease-in;
 }
-@media only screen and (max-width: 900px) {
+.js-team_container-animate{
+    opacity: 1;
+    animation: team_container_jiggle 1000ms linear;
+}
+@keyframes team_container_jiggle{
+    0%{
+        transform: rotate(0);
+    }
+    33%{
+        transform: rotate(15deg);
+    }
+    66%{
+        transform: rotate(-15deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+@media only screen and (max-width: 935px) {
     .team_container {
         flex-wrap: wrap;  
     }
 }
-.box1{ 
+.box{
     display:flex;
     border: 8px solid #ffffff;
-    background-image: url("../img/magda.jpg") ; 
     height: 490px;
     width: 20%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    text-decoration: none;
+    text-decoration: none;    
+    overflow: hidden; 
 }
-
+.box__Magda { 
+    background-image: url("../img/magda.PNG") ;   
+}
+.box__Mateusz{
+    background-image: url("../img/mateusz.jpg") ; 
+}
+.box__Kacper{
+    background-image: url("../img/kacper.jpg") ; 
+}
+.box__Arek{
+    background-image: url("../img/arek.jpg") ; 
+}
 a.team1:visited, a.team1:link, a.team1:hover{
     text-decoration: none;
     color:#ffffff;   
 }
 
-@media only screen and (max-width: 768px) {
-    .box1 {
+@media only screen and (max-width: 935px) {
+    .box {
         width: 44%;
     }  
 }
 @media only screen and (max-width: 470px) {
-    .box1 {    
+    .box {    
         width: 96%;
     }   
 }
 .rectangle{
-
     height: 50px;
     width: 100%;
     align-self: flex-end;
@@ -52,85 +82,54 @@ a.team1:visited, a.team1:link, a.team1:hover{
     font-size: 18px;
     background-color: #71dbb7;
     vertical-align: middle;
-    line-height: 3;
+    line-height: 3;  
 }
-.box1 .rectangle:hover{
+.rectangle.arek{
+    position: relative;
+    z-index: 1;
+    transition: all 0.8s;
+}
+.rectangle.kacper{
+    position: relative;
+    z-index: 1;
+    transition: all 0.8s;
+}
+.rectangle.mateusz{
+    position: relative;
+    z-index: 1;
+    transition: all 0.8s;
+}
+.rectangle.magda{
+    position: relative;
+    z-index: 1;
+    transition: all 0.8s;
+}
+.socials{
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 16px;
+    z-index: 0;
+    position: absolute;
+    align-self: flex-end;
+    vertical-align: middle;
+    padding-left: 10px;
+    line-height: 50px;  
+}
+.icon-linkedin-circled{
+    margin-left: 10px;
+}
+.box .rectangle:hover{
     background-color: #fe999b;
     transition: all 1s ease; 
     cursor: pointer;
 }
-.box2 {
-    display:flex;
-    border: 8px solid #ffffff;
-    background-image: url("../img/mateusz.jpg") ; 
-    height: 490px;
-    width: 20%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; 
+
+/* .box:hover {
+    -webkit-animation: blur 0.4s; 
 }
-.box2 .rectangle:hover{
-    background-color: #fe999b;
-    transition: all 1s ease; 
-    cursor: pointer;
-}
-@media only screen and (max-width: 768px) {
-    .box2 {
-        width: 44%;
-    }  
-}
-@media only screen and (max-width: 470px) {
-    .box2 {
-        width: 96%;
-    }
-}
-.box3{
-    display:flex;
-    border: 8px solid #ffffff;
-    background-image: url("../img/kacper.jpg") ; 
-    height: 490px;
-    width: 20%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-.box3 .rectangle:hover{
-    background-color: #fe999b;
-    transition: all 1s ease; 
-    cursor: pointer;
-}
-@media only screen and (max-width: 768px) {
-    .box3 {
-        width: 44%;
-    }   
-}
-@media only screen and (max-width: 470px) {
-    .box3 {
-        width: 96%;
-    }
-}
-.box4{
-    display:flex;
-    border: 8px solid #ffffff;
-    background-image: url("../img/arek.jpg") ; 
-    height: 490px;
-    width: 20%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-.box4 .rectangle:hover{
-    background-color: #fe999b;
-    transition: all 1s ease; 
-    cursor: pointer;
-}
-@media only screen and (max-width: 768px) {
-    .box4 {
-        width: 44%;
-    }
-}
-@media only screen and (max-width: 470px) {
-    .box4 {
-        width: 96%;
-    }
-}
+    
+    @-webkit-keyframes blur {
+       0% { -webkit-filter: blur(0px);}
+50% { -webkit-filter: blur(5px);}
+100% { -webkit-filter: blur(0px);}
+    } */
