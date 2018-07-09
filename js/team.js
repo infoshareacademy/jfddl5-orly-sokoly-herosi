@@ -1,41 +1,42 @@
 
-document.querySelector('.rectangle.magda').addEventListener("click", function () {
-    this.style.bottom = '-58px';
+
+document.querySelector('.box__Magda').addEventListener("mouseover", function () {
+    this.children[1].style.bottom = '-58px';
 }
 );
 
-document.querySelector('.rectangle.mateusz').addEventListener("click", function () {
-    this.style.bottom = '-58px';
+document.querySelector('.box__Magda').addEventListener("mouseout", function () {
+    this.children[1].style.bottom = '0';
+}
+);
+document.querySelector('.box__Mateusz').addEventListener("mouseover", function () {
+    this.children[1].style.bottom = '-58px';
 }
 );
 
-document.querySelector('.rectangle.kacper').addEventListener("click", function () {
-    this.style.bottom = '-58px';
+document.querySelector('.box__Mateusz').addEventListener("mouseout", function () {
+    this.children[1].style.bottom = '0';
+}
+);
+document.querySelector('.box__Kacper').addEventListener("mouseover", function () {
+    this.children[1].style.bottom = '-58px';
 }
 );
 
-document.querySelector('.rectangle.arek').addEventListener("click", function () {
-    this.style.bottom = '-58px';
+document.querySelector('.box__Kacper').addEventListener("mouseout", function () {
+    this.children[1].style.bottom = '0';
 }
 );
 
+document.querySelector('.box__Arek').addEventListener("mouseover", function () {
+    this.children[1].style.bottom = '-58px';
+}
+);
 
-// document.querySelector('.rectangle.team').addEventListener("mouseleave", function () {
-//     this.style.bottom = '0';
-// }
-// );
-
-// document.querySelector('.rectangle.team').addEventListener("mouseover", function () {
-//     this.style.bottom = '-58px';
-// });
-
-// document.querySelector('.box4').addEventListener("mouseover", function () {
-//     this.children[0].style.bottom = '-58px';
-// });
-
-// document.querySelector('.box4').addEventListener("mouseout", function () {
-//     this.children[0].style.bottom = '0';
-// });
+document.querySelector('.box__Arek').addEventListener("mouseout", function () {
+    this.children[1].style.bottom = '0';
+}
+);
 
 let $team_container = $(' .team_container');
 
