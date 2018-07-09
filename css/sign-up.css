@@ -26,6 +26,7 @@
     border: none;
     margin-bottom: 50px;
     text-align: center;
+	font-size: 16px;
 
 }
 .side-right__button {
@@ -38,10 +39,9 @@
     margin-bottom: 15px;
 }
 .user-email {
-    text-align: center;
+  text-align: center;
   width: 506px;
   height: 26px;
-  font-size: 16px;
   font-weight: normal;
   text-align: center;
   color: #93a6b9;
