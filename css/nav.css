@@ -140,8 +140,8 @@
 
 /* extra */
 .menu__list--item:hover {
-    opacity: 0.7;
-
+    background-color: #71dbb7;
+    color: white;
 }
 
 .menu__list--item:active {

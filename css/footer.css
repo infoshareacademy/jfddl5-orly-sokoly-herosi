@@ -1,11 +1,13 @@
 .footer {
-border-top: black solid 1px; 
-border-color: #71dbb7;
-margin: 0;
-color: #768595;
-}
-
-
-.footer__item {
-    font-weight:lighter;
-}
+    border-top: black solid 1px; 
+    border-color: #71dbb7;
+    margin: 0;
+    padding: 0;
+    color: #768595;
+    overflow: hidden;
+    }
+    
+    
+    .footer__item {
+        font-weight:lighter;
+    }
