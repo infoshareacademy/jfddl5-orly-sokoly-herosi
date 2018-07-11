@@ -294,11 +294,17 @@ Inactivity timeout displays prompt to start the survey from the beginning.
                     Do you want to get information about the premiere? We will send only one message. Free game from application developers. Leave your e-mail address!
                 </div>
                 <div class="sign-up-form__column">
-                    <input class="side-right__input" type="email" name="user-email" required placeholder="Enter Your e-mail" />
-                    <input type="hidden" name="from" value="mateusz.choma@infoshareacademy.com">
-                    <input type="hidden" name="redirect" value="https://google.com">
-                    <button class="side-right__button">Confirm</button>
-                    <div>
+
+                    <<form action="https://emaillabs-sender.herokuapp.com/" method="POST">
+                        <input class="side-right__input" type="email" name="emails[]" required placeholder="Enter Your e-mail">
+                        <input type="hidden" name="subject" value="Premiera lada moment!">
+                        <input type="hidden" name="message" value="Dziękujemy za zainteresowanie naszą aplikacją. W trakcie oczekiwania na naszą aplikację możesz zagrać w grę stworzoną przez twórców aplikacji. Sprawdź swoje możliwości zanim przejdziesz do robienia ankiet!">
+                        <input type="hidden" name="from" value="mateusz.choma@infoshareacademy.com">
+                        <input type="hidden" name="fromName" value="Survay App">
+                        <input type="hidden" name="redirect" value="https://google.com">
+                        <input class="side-right__button" type="submit" value="Confirm">
+                    </form>
+
                         <label class="sign-up-form__checkbox">
                             <input type="checkbox"> Your data will remain confidential, secure and will not remain
                             available to any third party without your express consent.
