@@ -71,7 +71,7 @@
 
                     <a class="menu__list--item" href="#sign-up-form">
                         <li>
-                            <div>Sign&nbsp;In</div>
+                            <div>Sign&nbsp;Up</div>
                         </li>
                     </a>
                 </ul>
@@ -152,10 +152,15 @@
                 <p class="item_describe">For free to personal use. For commercial use pay monthly or yearly. You're the boss! </p>
             </div>
         </div>
-
-
-
     </section>
+
+            <!-- CLOCK -->
+        
+            <section id=clock>
+
+                    <div class="premiere__date"></div>
+            
+                </section>
 
     <!-- DESCRIPTIONS -->
     <section id="descriptions" class="descriptions scroll">
@@ -312,11 +317,17 @@ Inactivity timeout displays prompt to start the survey from the beginning.
                     Do you want to get information about the premiere? We will send only one message. Free game from application developers. Leave your e-mail address!
                 </div>
                 <div class="sign-up-form__column">
-                    <input class="side-right__input" type="email" name="user-email" required placeholder="Enter Your e-mail" />
-                    <input type="hidden" name="from" value="mateusz.choma@infoshareacademy.com">
-                    <input type="hidden" name="redirect" value="https://google.com">
-                    <button class="side-right__button">Confirm</button>
-                    <div>
+
+                    <<form action="https://emaillabs-sender.herokuapp.com/" method="POST">
+                        <input class="side-right__input" type="email" name="emails[]" required placeholder="Enter Your e-mail">
+                        <input type="hidden" name="subject" value="Premiera lada moment!">
+                        <input type="hidden" name="message" value="Dziękujemy za zainteresowanie naszą aplikacją. W trakcie oczekiwania na naszą aplikację możesz zagrać w grę stworzoną przez twórców aplikacji. Sprawdź swoje możliwości zanim przejdziesz do robienia ankiet!">
+                        <input type="hidden" name="from" value="mateusz.choma@infoshareacademy.com">
+                        <input type="hidden" name="fromName" value="Survay App">
+                        <input type="hidden" name="redirect" value="https://google.com">
+                        <input class="side-right__button" type="submit" value="Confirm">
+                    </form>
+
                         <label class="sign-up-form__checkbox">
                             <input type="checkbox"> Your data will remain confidential, secure and will not remain
                             available to any third party without your express consent.
@@ -327,18 +338,13 @@ Inactivity timeout displays prompt to start the survey from the beginning.
         </div>
     </section>
 
-        <!-- CLOCK -->
-        
-    <section id=clock>
-
-        <div class="premiere__date"></div>
-
-    </section>
-
         <!-- FOOTER -->
 
     <footer id=footer class="footer">
-        <!-- <section class="footer__item">Orły Sokoły Herosi</section> -->
+
+        <footer id=footer class="footer">
+            <p class="footer__item">	&copy; Orły Sokoły Herosi 2018 </p>
+        </footer>
 
     </footer>
 
