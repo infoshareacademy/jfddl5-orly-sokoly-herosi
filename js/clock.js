@@ -29,9 +29,8 @@ const TimeToPremiere = function() {
         return
     }
 
-    container.innerHTML = "To Product Premiere Left:" + "<br>" + "<br>" + daysIntegerLeft + " days : " + hoursIntegerLeft + " hours : " + minIntegerLeft + " minutes : " + secIntegerLeft + " seconds"
+    container.innerHTML = "<p>" + "To Product Premiere:" + "<br>" + "<br>" + daysIntegerLeft + " days : " + hoursIntegerLeft + " hours : " + minIntegerLeft + " minutes : " + secIntegerLeft + " seconds"
 
 }
     
-    setInterval(TimeToPremiere, 3000)
-
+    setInterval(TimeToPremiere, 1000)
