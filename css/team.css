@@ -9,11 +9,11 @@
     margin-bottom: 5%;
     margin-top: 0%;
     opacity: 0;
-    transition: all 1100ms ease-in;
+    transition: all 700ms ease-in;
 }
 .js-team_container-animate{
     opacity: 1;
-    animation: team_container_jiggle 1000ms linear;
+    animation: team_container_jiggle 600ms linear;
 }
 @keyframes team_container_jiggle{
     0%{
@@ -46,7 +46,7 @@
     overflow: hidden; 
 }
 .box__Magda { 
-    background-image: url("../img/magda.PNG") ;   
+    background-image: url("../img/magda.jpg") ;   
 }
 .box__Mateusz{
     background-image: url("../img/mateusz.jpg") ; 
