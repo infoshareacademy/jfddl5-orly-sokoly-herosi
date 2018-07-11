@@ -37,6 +37,8 @@
     border: none;
     background-color: #71dbb7;
     margin-bottom: 15px;
+	font-size: 18px;
+	color: white;
 }
 .user-email {
   text-align: center;
