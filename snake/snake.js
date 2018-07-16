@@ -83,7 +83,7 @@ GameSnake.prototype.makeCell = (element) => {
         return CellZero()
     } else if (element === 'H') {
         return	CellHeadSnake()
-    } else if (element === '1') {}
+    } else if (element === '1') {
         return CellBodySnake()
     } else if (element === 'F') {
         return CellFood()
@@ -98,23 +98,5 @@ GameSnake.prototype.addSnakeAndFoodToArea = function () {
 //	this.area[this.initialPositionSnakeBody3.whatRow][this.initialPositionSnakeBody3.whatColumn] = '1'  //ogon snejka
     this.area[this.initialPositionFood.whatRow][this.initialPositionFood.whatColumn] = 'F'
 }
-//function attachEventListeners() {
-//        document.addEventListener('keydown', function (event) {
-//            switch (event.key) {
-//                case 'ArrowLeft':
-//                    move(-1, 0)
-//                    break
-//                case 'ArrowUp':
-//                    move(0, -1)
-//                    break
-//                case 'ArrowRight':
-//                    move(1, 0)
-//                    break
-//                case 'ArrowDown':
-//                    move(0, 1)
-//                    break
-//                // exit this handler for other keys
-//                default: return
-//            }
-new GameSnake()
 
+new GameSnake()

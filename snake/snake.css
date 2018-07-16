@@ -1,6 +1,10 @@
 .row{
 	display: flex;
-	flex-direction: row;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    border: 0;
+
 }
 
 .cell-zero,
@@ -10,8 +14,11 @@
 
     width: 80px;
     height: 80px;
-	margin-right: -1px;
-	margin-left: -1px;	
+    margin: 0;
+    padding: 0;
+    border: 0;
+	margin: -1px;
+	/* margin-left: -1px; */
 }
 
 .cell-zero{
