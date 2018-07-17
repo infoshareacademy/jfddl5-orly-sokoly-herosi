@@ -15,10 +15,7 @@ function GameSnake() {
     this.initialPositionSnakeHead = this.initialPosition(6, 6)
     this.initialPositionSnakeBody1 = this.initialPosition(7, 6)
     this.initialPositionSnakeBody2 = this.initialPosition(8, 6)
-<<<<<<< HEAD
 //	this.initialPositionSnakeBody3 = this.initialPosition(9, 6)  //dodanie ogona
-=======
->>>>>>> develop
     this.initialPositionFood = this.initialPosition(3, 3)
     this.foodPosition = null
     this.score = null
@@ -48,7 +45,6 @@ GameSnake.prototype.prepareLayout = function () {
     this.container.appendChild(this.gameContainer)
 }
 //this function will be transform the table from js to HTML 
-<<<<<<< HEAD
 GameSnake.prototype.render = function () { 
 	this.gameContainer.innerHTML = ''
 
@@ -95,24 +91,12 @@ GameSnake.prototype.makeCell = (element) => {
 	
 }
 
-=======
-GameSnake.prototype.render = function () { }
->>>>>>> develop
 GameSnake.prototype.addSnakeAndFoodToArea = function () {
     this.area[this.initialPositionSnakeHead.whatRow][this.initialPositionSnakeHead.whatColumn] = 'H'
     this.area[this.initialPositionSnakeBody1.whatRow][this.initialPositionSnakeBody1.whatColumn] = '1'
     this.area[this.initialPositionSnakeBody2.whatRow][this.initialPositionSnakeBody2.whatColumn] = '1'
-<<<<<<< HEAD
 //	this.area[this.initialPositionSnakeBody3.whatRow][this.initialPositionSnakeBody3.whatColumn] = '1'  //ogon snejka
     this.area[this.initialPositionFood.whatRow][this.initialPositionFood.whatColumn] = 'F'
 }
 
 new GameSnake()
-=======
-    this.area[this.initialPositionFood.whatRow][this.initialPositionFood.whatColumn] = 'F'
-}
-const game1 = new GameSnake()
-
-
- 
->>>>>>> develop
