@@ -3,7 +3,6 @@
     letter-spacing: 2px;
     background-color: #fe999b;
     width: 100%;
-    height: 900px;
 }
 .sign-up__logo {
     background: url(../img/sign-up-form-img.jpg);
@@ -30,6 +29,7 @@
 
 }
 .side-right__button {
+    color: white;
     width: 80%;
     height: 55px;
     border-radius: 28px;
@@ -37,6 +37,8 @@
     border: none;
     background-color: #71dbb7;
     margin-bottom: 15px;
+	font-size: 18px;
+	color: white;
 }
 .user-email {
   text-align: center;

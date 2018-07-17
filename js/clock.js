@@ -22,7 +22,7 @@ const TimeToPremiere = function() {
     if(secIntegerLeft < 10) {
     secIntegerLeft = "0" + secIntegerLeft }
 
-    console.log(container)
+    // console.log(container)
 
     if(timeLeft <= 999) {
         container.innerHTML = "The product premiere took place on August 27, 2018!"
