@@ -8,9 +8,28 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="range" min="0" max="5" data-rangeSlider>
+    <!-- <input type="range" min="0" max="10" data-rangeSlider> -->
+    <div class="rangeslider">
+        <input type="range" min="1" max="20" value="10"  id="sliderRange">
+        <p>Amount person in team: <span id="range-value"></span></p>
+        <datalist id="value-list">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+            <option value="7"></option>
+            <option value="8"></option>
+            <option value="9"></option>
+            <option value="10"></option>
+        </datalist>
+        
 
-
+      </div>
+    <div >
+        <p>Price: <span id="price"></span></p>
+    </div>
 <script src="rangeSlider.js"></script>
 </body>
 </html>
