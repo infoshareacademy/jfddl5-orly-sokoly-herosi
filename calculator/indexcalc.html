@@ -8,9 +8,41 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="range" min="0" max="5" data-rangeSlider>
-
-
-<script src="rangeSlider.js"></script>
+<div class="checkbox-container">
+	<h1 class="checkbox-container_title">I would like use for:</h1>
+	<input type="checkbox" class="checkbox-container_1" >
+	<p class="text">personal  / charity use</p>
+	<input type="checkbox" class="checkbox-container_2" onclick=function("range-container")>
+	<p class="text2">commercial use</p>
+	</div>
+<div class="range-container" style=>
+	<h1 class="range-container_title">Amount person</h1>
+ <input id="person" type="range" min="1" max="10" value="1" />
+	<p id="result-person">0</p>
+	<p id="sum">Price for month:</p>
+	<p id="result-price">$ 0</p>
+	</div>
+	
+<script>
+	/////checkbox choose///
+	
+	
+	
+	
+	
+	////////
+	const person = document.getElementById("person")
+   	const result = document.getElementById("result-person")
+	
+	person.addEventListener("input", function() {
+    	result.innerHTML = person.value;
+		document.querySelector("#result-price").innerHTML = "$" + person.value * 5 
+	}, false); 
+	
+	
+	
+	</script>
+	
+<!--<script src="rangeSlider.js"></script>-->
 </body>
 </html>
