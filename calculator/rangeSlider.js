@@ -1,8 +1,25 @@
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value; // Display the default slider value
+const personalCheckbox = document.querySelector('#use')
+const commercialCheckbox = document.querySelector('#use2')
 
-// Update the current slider value (each time you drag the slider handle)
-slider.oninput = function() {
-    output.innerHTML = this.value;
+personalCheckbox.addEventListener('click', handleClick)
+
+function handleClick() {
+    const isCheckedPersonal = personalCheckbox.checked
+    if (isCheckedPersonal) {
+        document.querySelector('.range-container').style.display = 'none'
+        document.getElementById('result-price').reset()
+    } else {
+        document.querySelector('.range-container').style.display = 'block'
+    }
 }
+
+commercialCheckbox.addEventListener('click', handleClick)
+
+
+const person = document.getElementById("person")
+const result = document.getElementById("result-person")
+
+person.addEventListener("input", function () {
+    result.innerHTML = person.value;
+    document.querySelector("#result-price").innerHTML = "$" + person.value * 5
+}, false);

@@ -8,62 +8,30 @@
     <link rel="stylesheet" href="calculator.css">
     <title>Document</title>
 </head>
-
+<header class="header">Pricing</header>
 <body>
+    
     <div class="checkbox-container">
         <h1 class="checkbox-container_title">I would like use for:</h1>
         <input type="radio" name="user-form" value="personal-use" id="use" checked>
         <label for="text">personal / charity use</label>
         <input type="radio" name="user-form" value="commercial-use" id="use2">
         <label for="text2">commercial use</label>
+
     </div>
-    <div class="range-container">
+    <div class="range-container" style="display:none">
         <h1 class="range-container_title">Amount person</h1>
         <input id="person" type="range" min="1" max="10" value="1" />
-        <p id="result-person">0</p>
-        <p id="sum">Price for month:</p>
+        <label id="result-person">0</label>
+        <p id="price-title">Price for month:</p>
+
+    </div>
+    <div>
         <p id="result-price">$ 0</p>
     </div>
 
-    <script>
-        /////checkbox choose///
 
-        const personalCheckbox = document.querySelector('#use')
-        const commercialCheckbox = document.querySelector('#use2')
-
-
-        personalCheckbox.addEventListener('click', handleClick)
-
-        function handleClick() {
-            const isCheckedPersonal = personalCheckbox.checked
-            if (isCheckedPersonal) {
-                document.querySelector('.range-container').style.display = 'none'
-            } else {
-                document.querySelector('.range-container').style.display = 'block'
-            }
-        }
-
-            commercialCheckbox.addEventListener('click', handleClick)
-
-
-
-
-
-
-
-            const person = document.getElementById("person")
-            const result = document.getElementById("result-person")
-
-            person.addEventListener("input", function () {
-                result.innerHTML = person.value;
-                document.querySelector("#result-price").innerHTML = "$" + person.value * 5
-            }, false);
-
-
-
-    </script>
-
-    <!--<script src="rangeSlider.js"></script>-->
 </body>
+<script src="rangeSlider.js"></script>
 
-</html>
+</htm>
