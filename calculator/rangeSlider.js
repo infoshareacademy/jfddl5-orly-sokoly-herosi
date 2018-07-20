@@ -7,7 +7,7 @@ function handleClick() {
     const isCheckedPersonal = personalCheckbox.checked
     if (isCheckedPersonal) {
         document.querySelector('.range-container').style.display = 'none'
-        document.getElementById('result-price').reset()
+        document.getElementById('result-price').innerHTML = "$0"
     } else {
         document.querySelector('.range-container').style.display = 'block'
     }
