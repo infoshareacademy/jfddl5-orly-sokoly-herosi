@@ -113,9 +113,15 @@ GameSnake.prototype.addRankingElemnts = function () {
     const input = document.createElement('input')
     const button = document.createElement('button')
     const ul = document.createElement('ul')
+    rankingContainer.style.position= 'fixed'
+    rankingContainer.style.top= '50%'
+    rankingContainer.style.left= '50%'
+    rankingContainer.style.transform= 'translate(-50%, -50%)'
+    rankingContainer.style.zIndex = '9999'
+    rankingContainer.style.backgroundColor= 'white'
+    rankingContainer.style.padding= '30px'
 
     const scoreBoard = JSON.parse(localStorage.getItem('osh-snake-game')) || []
-    console.log(scoreBoard)
 
     document.querySelector('body').appendChild(rankingContainer)
     rankingContainer.appendChild(input)
