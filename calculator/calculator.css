@@ -38,9 +38,17 @@ body {
 }
 .checkbox-container {
     justify-content: center;
+    display: flex;
     flex-direction: column
 }
 
+<<<<<<< HEAD
+=======
+
+.range-container {
+   
+}
+>>>>>>> origin/feature/calculator
 
 #result-price {
     font-size: 2em;
@@ -105,4 +113,6 @@ input[type="range"]::-webkit-slider-thumb {
     background-image: linear-gradient(to bottom, #529de1 0, #245e8f 100%);
    
 }
+
+
 
