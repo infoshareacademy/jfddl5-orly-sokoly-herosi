@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,35 @@
     <link rel="stylesheet" href="calculator.css">
     <title>Document</title>
 </head>
+<header class="header">License</header>
 <body>
-    <input type="range" min="0" max="5" data-rangeSlider>
+    
+    <div class="checkbox-container">
+        <h1 class="checkbox-container_title">I WOULD LIKE USE FOR:</h1>
+    </div>
+        <div><input type="radio" name="user-form" value="personal-use" id="use" checked>
+        <label for="text">Personal or charity use</label></div>
+        <div><input type="radio" name="user-form" value="commercial-use" id="use2">
+        <label for="text2">Commercial use</label></div>
 
+    </div>
+    <div class="range-container" style="display:none">
+        <h1 class="range-container_title">AMOUNT PERSON</h1>
+        <input id="person" type="range" min="1" max="10" value="1" />
+        <div class="result-person">
+        <label id="result-person">0</label>
+    </div>
+        <p id="price-title">PRICE FOR MONTH:</p>
+    </div>
+    <div>
+        <p id="result-price">$ 0</p>
+    </div>
+
+    <a class="button" href="../index.html">Back to main</a>
+
+
+</body>
 
 <script src="rangeSlider.js"></script>
-</body>
-</html>
+
+</htm>
